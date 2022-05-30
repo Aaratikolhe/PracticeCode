@@ -6,34 +6,26 @@ namespace GradeBook
     {
         static void Main(string[] args)
         {
-            var book=new Book();
-            var numbers=new []{12.7,10.3,6.11,4.1};
-            List<double> grades=new List<double>(){12.7,10.3,6.11,4.1};
-            grades.Add (56.1);
-            // numbers[0]=12.7;
-            // numbers[1]=10.2;
-            // numbers[2]=10.3;
+            Book book = new Book("Tom's Grade Book");
+            book.AddGrade(89.1);
+            book.AddGrade(90.1);
 
+            var grades=new List<double>(){12.7,10.3,6.11,4.1};
+            grades.Add (56.1);
+
+            var highGrade = double.MinValue;
             var result = 0.0;
-            // result=result+numbers[1];
-            // result+=numbers[2];
             foreach (var number in grades)
             {
+                if(number> highGrade)
+                {
+                    highGrade = number;
+                }
                 result+=number;
             }
             result /=grades.Count;
             Console.WriteLine($"The average grade is {result:N5}");
-            if(args.Length>0)
-            {
-                Console.WriteLine($"Hello, {args[0]}" );
-            }
             
-            else
-            {
-
-             Console.WriteLine("Hello, Aarati!");
-
-            }
         }
     }
 }
