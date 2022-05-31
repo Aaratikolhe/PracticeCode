@@ -1,31 +1,61 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
-namespace GradeBook
+namespace Gradebook
 {
     class Program
     {
         static void Main(string[] args)
         {
             Book book = new Book("Tom's Grade Book");
-            book.AddGrade(89.1);
-            book.AddGrade(90.1);
-
-            var grades=new List<double>(){12.7,10.3,6.11,4.1};
-            grades.Add (56.1);
-
-            var highGrade = double.MinValue;
-            var result = 0.0;
-            foreach (var number in grades)
+            //book.AddGrade(89.1);
+            //book.AddGrade(90.1);
+            //book.AddGrade(87.45);
+            //book.AddGrade(94.5);
+            //book.AddGrade(97.88);
+            while(true)
             {
-                if(number> highGrade)
+                Console.WriteLine("Enter a grade or 'q' to quit");
+                var input=Console.ReadLine();
+                if(input=="q")
                 {
-                    highGrade = number;
+                    break;
                 }
-                result+=number;
+                try
+                {
+                    var grade = double.Parse(input);
+                    book.AddGrade(grade);
+                }
+                catch(ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+
+                }
+                catch(FormatException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
+                finally
+                {
+                    Console.WriteLine("*******");
+                }
             }
-            result /=grades.Count;
-            Console.WriteLine($"The average grade is {result:N5}");
-            
+            book.GetStatistics();
+            //List<double> grades = new List<double>();
+            //grades.Add(78.55);
+            //grades.Add(80.54);
+            //grades.Add(92.44);
+            //grades.Add(85.32);
+            //grades.Add(89.45);
+            //Book book2 = new Book(grades, "Ellen's Grade Book");
+
+            var result = book.GetStatistics();
+            Console.WriteLine(Book.CATEGORY);
+            Console.WriteLine($"The lowest grade is {result.high}");
+            Console.WriteLine($"The highest grade is {result.low}");
+            Console.WriteLine($"The average grade is {result.average}");
+            Console.WriteLine($"The average grade is {result.letter}");
+
+
         }
     }
 }
