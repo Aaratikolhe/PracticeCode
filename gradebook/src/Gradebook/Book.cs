@@ -1,32 +1,94 @@
 
 namespace Gradebook
 {
-    public class Book
+    public delegate void GradeAddedDelegate(object sender, EventArgs args);
+
+    public class NamedObject
+    {
+        public NamedObject(string name)
+        {
+            Name = name;
+        }
+
+
+        public string Name 
+        { 
+            get; 
+            set;
+        } 
+    }
+    public interface IBook
+    {
+        void AddGrade(double grade);
+        Statistics GetStatistics(); 
+        string Name { get; }
+        event GradeAddedDelegate GradeAdded;
+    }
+
+    public  abstract class Book:NamedObject,IBook
+    {
+       public Book(string name):base(name)
+        {
+
+        }
+
+        public abstract event GradeAddedDelegate GradeAdded;
+
+        public abstract void AddGrade(double grade);
+
+        public abstract Statistics GetStatistics();
+       
+    }
+
+    public class DiskBook : Book
+    {
+        public DiskBook(string name) : base(name)
+        {
+        }
+
+        public override event GradeAddedDelegate GradeAdded;
+
+        public override void AddGrade(double grade)
+        {
+            var writerFile=File.AppendText($"{Name}.txt");
+            writerFile.WriteLine(grade);
+            writerFile.Close();
+
+        }
+
+        public override Statistics GetStatistics()
+        {
+            throw new NotImplementedException();
+        }
+    }
+
+    public class InMemoryBook : Book
     {
         private List<double> grades;
-        private string name;
+       // private string name;
         public const string CATEGORY="Science";
+        public override event GradeAddedDelegate GradeAdded;
 
-        public string Name
-        {
-            get 
-            {
-                return name; 
-            }
-            set
-            {
-                if(!String.IsNullOrEmpty(value))
-                {
-                    name = value;
-                }
+        //public string Name
+        //{
+        //    get 
+        //    {
+        //        return name; 
+        //    }
+        //    set
+        //    {
+        //        if(!String.IsNullOrEmpty(value))
+        //        {
+        //            name = value;
+        //        }
                
-            }
-        }
-        public Book(List<double> grades, string name)
-        {
-            this.grades = grades;
-            this.name = name;
-        }
+        //    }
+        //}
+        //public InMemoryBook(List<double> grades, string name)
+        //{
+        //    this.grades = grades;
+        //    this.name = name;
+        //}
         public void AddGrade(char letter)
         {
             switch(letter)
@@ -54,25 +116,30 @@ namespace Gradebook
             }
         }
 
-        public Book(string name)
+        public InMemoryBook(string name):base(name)
         {
+
              grades = new List<double>();
-            this.name = name;
+            Name = name;
         }
-        public void AddGrade(double grade)
+        public override void AddGrade(double grade)
         {
             if (grade <= 100&&grade>=0)
             {
-                grades.Add(grade);
+                 grades.Add(grade);
+                if(GradeAdded!=null)
+                {
+                    GradeAdded(this,new EventArgs());
+                }
             }
             else
             {
                 throw new ArgumentException($"Invalid value");
-                Console.WriteLine("Invalisd value");
+                Console.WriteLine("Invalid value");
             }
         }
 
-        public Statistics GetStatistics()
+        public override Statistics GetStatistics()
         {
             var result = new Statistics();
             

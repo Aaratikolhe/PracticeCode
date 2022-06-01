@@ -14,7 +14,7 @@ namespace GradeBookTest
             //var actual = x * y;
             //Assert.AreEqual(expected,actual) ;
 
-            var book = new Book("Name");
+            var book = new InMemoryBook("Name");
             book.AddGrade(89.1);
             book.AddGrade(90.5);
             book.AddGrade(77.3);
