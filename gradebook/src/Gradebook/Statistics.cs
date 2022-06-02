@@ -8,15 +8,60 @@ namespace Gradebook
 {
     public class Statistics
     {
-        public double average;
-        public double high;
-        public double low;
-        public char letter;
+        public double Average
+        {
+            get 
+            { 
+                return Sum / Count;
+            }
+        }
+
+        public double High;
+        public double Low;
+        public char Letter
+        {
+            get
+            {
+                switch (Average)
+                {
+                    case var a when a >= 90.0:
+                        return  'A';
+
+                    case var a when a >= 80.0:
+                        return  'B';
+
+                    case var a when a >= 70.0:
+                        return 'C';
+
+                    case var a when a >= 60.0:
+                        return  'D';
+
+                    default:
+                        return 'F';
+
+                }
+            }
+        }
+
+           
+        public double Sum;
+        public double Count;
+
+        public void Add(double number)
+        {
+            Sum += number;
+            Count += 1;
+            Low=Math.Min(number,Low);
+            High=Math.Max(number,High);
+        }
         public Statistics()
         {
-            average = 0.0;
-            high = double.MinValue;
-            low = double.MaxValue;
+            Sum = 0.0;
+            Count = 0.0;
+            High = double.MinValue;
+            Low = double.MaxValue;
         }
+
+
     }
 }

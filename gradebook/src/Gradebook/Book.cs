@@ -5,6 +5,10 @@ namespace Gradebook
 
     public class NamedObject
     {
+        public NamedObject()
+        {
+
+        }
         public NamedObject(string name)
         {
             Name = name;
@@ -50,15 +54,34 @@ namespace Gradebook
 
         public override void AddGrade(double grade)
         {
-            var writerFile=File.AppendText($"{Name}.txt");
-            writerFile.WriteLine(grade);
-            writerFile.Close();
+            using (var writer = File.AppendText($"{Name}.txt"))          //Using will make compiler to cleans things up when this finished with these obj or reach to the end of curly bkt of the statement
+            {
+                writer.WriteLine(grade);
+                if(GradeAdded!=null)
+                {
+                    GradeAdded(this, new EventArgs());
+                }
+            }
+            Console.WriteLine("File added");
 
         }
 
         public override Statistics GetStatistics()
         {
-            throw new NotImplementedException();
+            var result = new Statistics();
+
+            using (var reader = File.OpenText($"{Name}.txt"))        
+            {
+                var line = reader.ReadLine();
+                while (line != null)
+                {
+                    var number=double.Parse(line);
+                    result.Add(number);
+                    line=reader.ReadLine();
+                }
+            }
+            return result;
+
         }
     }
 
@@ -145,38 +168,11 @@ namespace Gradebook
             
             foreach (var grade in grades)
             {
-                if (grade > result.high)
-                {
-                    result.high = grade;
-                }
-                result.low = Math.Min(result.low, grade);
-                result.average += grade;
+                result.Add(grade);
             }
-            result.average /= grades.Count;
-            switch (result.average)
-            {
-                case var a when a >= 90.0 :
-                    result.letter = 'A';
-                    break;
-
-                case var a when a >= 80.0:
-                    result.letter = 'B';
-                    break;
-
-                case var a when a >= 70.0:
-                    result.letter = 'C';
-                    break;
-
-                case var a when a >= 60.0:
-                    result.letter = 'D';
-                    break;
-
-                default:
-                    result.letter = 'F';
-                    break;
-
-            }
+            
             return result;
+
                     
         }
 
