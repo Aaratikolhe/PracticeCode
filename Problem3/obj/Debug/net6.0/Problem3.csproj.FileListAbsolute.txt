@@ -1,0 +1,15 @@
+C:\Users\kolh_aar\PracticeCode\Problem3\bin\Debug\net6.0\Problem3.exe
+C:\Users\kolh_aar\PracticeCode\Problem3\bin\Debug\net6.0\Problem3.deps.json
+C:\Users\kolh_aar\PracticeCode\Problem3\bin\Debug\net6.0\Problem3.runtimeconfig.json
+C:\Users\kolh_aar\PracticeCode\Problem3\bin\Debug\net6.0\Problem3.dll
+C:\Users\kolh_aar\PracticeCode\Problem3\bin\Debug\net6.0\Problem3.pdb
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\Problem3.csproj.AssemblyReference.cache
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\Problem3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\Problem3.AssemblyInfoInputs.cache
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\Problem3.AssemblyInfo.cs
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\Problem3.csproj.CoreCompileInputs.cache
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\Problem3.dll
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\refint\Problem3.dll
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\Problem3.pdb
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\Problem3.genruntimeconfig.cache
+C:\Users\kolh_aar\PracticeCode\Problem3\obj\Debug\net6.0\ref\Problem3.dll
