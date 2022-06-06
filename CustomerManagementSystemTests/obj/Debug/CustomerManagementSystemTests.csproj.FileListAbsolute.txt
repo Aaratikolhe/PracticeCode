@@ -1,0 +1,17 @@
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\obj\Debug\CustomerManagementSystemTests.csproj.AssemblyReference.cache
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\obj\Debug\CustomerManagementSystemTests.csproj.CoreCompileInputs.cache
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\CustomerManagementSystemTests.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\CustomerManagementSystemTests.pdb
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\NewCustomerManagementSystem.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\NewCustomerManagementSystem.pdb
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\obj\Debug\CustomerManagementSystemTests.csproj.CopyComplete
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\obj\Debug\CustomerManagementSystemTests.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\obj\Debug\CustomerManagementSystemTests.pdb
