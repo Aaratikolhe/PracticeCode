@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,12 +47,20 @@
     <Compile Include="Address.cs" />
     <Compile Include="AddressRepository.cs" />
     <Compile Include="CustomerRepository.cs" />
+    <Compile Include="EntityBase.cs" />
+    <Compile Include="Interface1.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderItem.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerManagementSystem.Common\CustomerManagementSystem.Common.csproj">
+      <Project>{1256622d-55a0-4d7e-9011-6911db5b129c}</Project>
+      <Name>CustomerManagementSystem.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

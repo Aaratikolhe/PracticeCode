@@ -1,6 +1,9 @@
-C:\Users\kolh_aar\PracticeCode\NewCustomerManagementSystem\bin\Debug\NewCustomerManagementSystem.dll
-C:\Users\kolh_aar\PracticeCode\NewCustomerManagementSystem\bin\Debug\NewCustomerManagementSystem.pdb
-C:\Users\kolh_aar\PracticeCode\NewCustomerManagementSystem\obj\Debug\CustomerManagementSystem.csproj.AssemblyReference.cache
-C:\Users\kolh_aar\PracticeCode\NewCustomerManagementSystem\obj\Debug\CustomerManagementSystem.csproj.CoreCompileInputs.cache
-C:\Users\kolh_aar\PracticeCode\NewCustomerManagementSystem\obj\Debug\NewCustomerManagementSystem.dll
-C:\Users\kolh_aar\PracticeCode\NewCustomerManagementSystem\obj\Debug\NewCustomerManagementSystem.pdb
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem\bin\Debug\CustomerManagementSystem.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem\bin\Debug\CustomerManagementSystem.pdb
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem\obj\Debug\CustomerManagementSystem.csproj.AssemblyReference.cache
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem\obj\Debug\CustomerManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem\obj\Debug\CustomerManagementSystem.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem\obj\Debug\CustomerManagementSystem.pdb
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem\bin\Debug\CustomerManagementSystem.Common.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem\bin\Debug\CustomerManagementSystem.Common.pdb
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem\obj\Debug\CustomerManagementSystem.csproj.CopyComplete

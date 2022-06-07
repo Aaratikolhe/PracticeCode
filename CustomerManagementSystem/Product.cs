@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CustomerManagementSystem.Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CustomerManagementSystem
 {
-    public class Product
+    public class Product:EntityBase,ILoggable
     {
         public Product()
         {
@@ -16,7 +17,21 @@ namespace CustomerManagementSystem
         {
             ProductId= productId;
         }
-        public string ProductName { get; set; }
+ 
+        private string productName;
+
+        public string ProductName
+        {
+            get
+            {
+                //var stringHandler = new StringHandler();
+                return productName.InsertSpaces();  
+            }
+            set
+            {
+                productName= value;
+            }
+        }
         public string ProductDescription { get; set; }
         public int ProductId { get; set; }
         public decimal? CurrentPrice { get; set; }
@@ -25,12 +40,24 @@ namespace CustomerManagementSystem
         {
             return new Product();
         }
+        public string Log()
+        {
+            var logString = ProductId + ":" +
+                ProductName + ":" +
+                "Description: " + ProductDescription+
+                 "Status: " + EntityState.ToString();
+            return logString;
 
+        }
+        public override string ToString()
+        {
+            return ProductName;
+        }
         public bool Save()
         {
             return true;
         }
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
             if (string.IsNullOrEmpty(ProductName))

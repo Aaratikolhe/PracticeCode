@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerTest.cs" />
+    <Compile Include="ProductRepositoryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CustomerRepositoryTest.cs" />
   </ItemGroup>
@@ -57,7 +58,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\NewCustomerManagementSystem\CustomerManagementSystem.csproj">
+    <ProjectReference Include="..\CustomerManagementSystem\CustomerManagementSystem.csproj">
       <Project>{bab91312-356d-42a3-81b8-3fc27e9a96d1}</Project>
       <Name>CustomerManagementSystem</Name>
     </ProjectReference>

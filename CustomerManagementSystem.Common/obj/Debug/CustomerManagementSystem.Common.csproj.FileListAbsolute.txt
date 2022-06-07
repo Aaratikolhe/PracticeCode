@@ -1,0 +1,6 @@
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem.Common\bin\Debug\CustomerManagementSystem.Common.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem.Common\bin\Debug\CustomerManagementSystem.Common.pdb
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem.Common\obj\Debug\CustomerManagementSystem.Common.csproj.AssemblyReference.cache
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem.Common\obj\Debug\CustomerManagementSystem.Common.csproj.CoreCompileInputs.cache
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem.Common\obj\Debug\CustomerManagementSystem.Common.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystem.Common\obj\Debug\CustomerManagementSystem.Common.pdb

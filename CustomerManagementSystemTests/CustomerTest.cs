@@ -12,7 +12,7 @@ namespace CustomerManagementSystemTests
         {
             Customer customer = new Customer { FirstName = "Aarati", LastName = "" };
         
-            string expected = "Aarati ";
+            string expected = "Aarati";
 
             string actual = customer.FullName;
 

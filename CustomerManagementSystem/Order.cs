@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CustomerManagementSystem.Common;
 
 namespace CustomerManagementSystem
 {
-    public class Order
+    public class Order:EntityBase,ILoggable
     {
         public Order()
         {
@@ -15,13 +16,15 @@ namespace CustomerManagementSystem
         public Order(int orderId)
         {
             OrderId = orderId;
+            OrderItems= new List<OrderItem>();
         }
 
         public int OrderId { get; set; }
-
+        public List<OrderItem> OrderItems { get; set; }
         public DateTimeOffset? OrderDate { get; set; }
-
-        public bool Validate()
+        public int CustomerId { get; set; }
+        public string ShippingAddressId { get; set; }
+        public override bool Validate()
         {
             var isValid = true;
             if (OrderDate==null)
@@ -43,6 +46,17 @@ namespace CustomerManagementSystem
         public bool Save()
         {
             return true;
+        }
+
+        public string Log()
+        {
+            {
+                var logString = OrderId + ":" +
+                    OrderDate + ":" +
+                     "Status: " + EntityState.ToString();
+                return logString;
+
+            }
         }
     }
 }

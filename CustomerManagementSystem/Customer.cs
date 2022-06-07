@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
+using CustomerManagementSystem.Common;
 
 namespace CustomerManagementSystem
 {
-    public class Customer
+    public class Customer:EntityBase,ILoggable
     {
         public Customer():this(0)
         {
@@ -28,7 +29,7 @@ namespace CustomerManagementSystem
                 string fullName = LastName;
                 if (!string.IsNullOrEmpty(FirstName))
                 {
-                    if(!string.IsNullOrEmpty(FullName))
+                    if(!string.IsNullOrEmpty(fullName))
                     {
                         fullName += " ";
                     }
@@ -38,8 +39,21 @@ namespace CustomerManagementSystem
             }
         }
         public static int InstanceCount { get; set; }
-   
-        public bool Validate()
+        public string Log()
+        {
+            var logString = CustomerId + ":" +
+                FullName + ":" +
+                "Email: " + EmailAddress +
+                "Status: " + EntityState.ToString();
+                return logString;
+
+        }
+        public override string ToString()
+        {
+            return FullName;
+        }
+
+        public override bool Validate()
         {
              var isValid = true;
              if (string.IsNullOrEmpty(LastName))

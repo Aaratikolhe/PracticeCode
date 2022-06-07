@@ -8,10 +8,12 @@ C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\CustomerM
 C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\CustomerManagementSystemTests.pdb
 C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
 C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
-C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\NewCustomerManagementSystem.dll
-C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\NewCustomerManagementSystem.pdb
 C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
 C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\obj\Debug\CustomerManagementSystemTests.csproj.CopyComplete
 C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\obj\Debug\CustomerManagementSystemTests.dll
 C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\obj\Debug\CustomerManagementSystemTests.pdb
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\CustomerManagementSystem.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\CustomerManagementSystem.pdb
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\CustomerManagementSystem.Common.dll
+C:\Users\kolh_aar\PracticeCode\CustomerManagementSystemTests\bin\Debug\CustomerManagementSystem.Common.pdb
