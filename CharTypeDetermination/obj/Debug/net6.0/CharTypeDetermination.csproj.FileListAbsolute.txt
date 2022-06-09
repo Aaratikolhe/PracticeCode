@@ -1,0 +1,15 @@
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\CharTypeDetermination.csproj.AssemblyReference.cache
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\CharTypeDetermination.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\CharTypeDetermination.AssemblyInfoInputs.cache
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\CharTypeDetermination.AssemblyInfo.cs
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\CharTypeDetermination.csproj.CoreCompileInputs.cache
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\bin\Debug\net6.0\CharTypeDetermination.exe
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\bin\Debug\net6.0\CharTypeDetermination.deps.json
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\bin\Debug\net6.0\CharTypeDetermination.runtimeconfig.json
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\bin\Debug\net6.0\CharTypeDetermination.dll
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\bin\Debug\net6.0\CharTypeDetermination.pdb
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\CharTypeDetermination.dll
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\refint\CharTypeDetermination.dll
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\CharTypeDetermination.pdb
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\CharTypeDetermination.genruntimeconfig.cache
+C:\Users\kolh_aar\PracticeCode\CharTypeDetermination\obj\Debug\net6.0\ref\CharTypeDetermination.dll
