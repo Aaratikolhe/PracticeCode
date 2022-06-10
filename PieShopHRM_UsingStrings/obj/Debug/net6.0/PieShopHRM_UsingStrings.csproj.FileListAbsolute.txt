@@ -1,0 +1,15 @@
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\bin\Debug\net6.0\PieShopHRM_UsingStrings.exe
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\bin\Debug\net6.0\PieShopHRM_UsingStrings.deps.json
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\bin\Debug\net6.0\PieShopHRM_UsingStrings.runtimeconfig.json
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\bin\Debug\net6.0\PieShopHRM_UsingStrings.dll
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\bin\Debug\net6.0\PieShopHRM_UsingStrings.pdb
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\PieShopHRM_UsingStrings.csproj.AssemblyReference.cache
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\PieShopHRM_UsingStrings.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\PieShopHRM_UsingStrings.AssemblyInfoInputs.cache
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\PieShopHRM_UsingStrings.AssemblyInfo.cs
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\PieShopHRM_UsingStrings.csproj.CoreCompileInputs.cache
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\PieShopHRM_UsingStrings.dll
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\refint\PieShopHRM_UsingStrings.dll
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\PieShopHRM_UsingStrings.pdb
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\PieShopHRM_UsingStrings.genruntimeconfig.cache
+C:\Users\kolh_aar\PracticeCode\PieShopHRM_UsingStrings\obj\Debug\net6.0\ref\PieShopHRM_UsingStrings.dll

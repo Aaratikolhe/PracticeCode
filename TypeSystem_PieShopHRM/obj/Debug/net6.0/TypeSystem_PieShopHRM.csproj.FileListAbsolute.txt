@@ -1,0 +1,15 @@
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\bin\Debug\net6.0\TypeSystem_PieShopHRM.exe
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\bin\Debug\net6.0\TypeSystem_PieShopHRM.deps.json
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\bin\Debug\net6.0\TypeSystem_PieShopHRM.runtimeconfig.json
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\bin\Debug\net6.0\TypeSystem_PieShopHRM.dll
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\bin\Debug\net6.0\TypeSystem_PieShopHRM.pdb
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\TypeSystem_PieShopHRM.csproj.AssemblyReference.cache
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\TypeSystem_PieShopHRM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\TypeSystem_PieShopHRM.AssemblyInfoInputs.cache
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\TypeSystem_PieShopHRM.AssemblyInfo.cs
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\TypeSystem_PieShopHRM.csproj.CoreCompileInputs.cache
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\TypeSystem_PieShopHRM.dll
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\refint\TypeSystem_PieShopHRM.dll
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\TypeSystem_PieShopHRM.pdb
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\TypeSystem_PieShopHRM.genruntimeconfig.cache
+C:\Users\kolh_aar\PracticeCode\TypeSystem_PieShopHRM\obj\Debug\net6.0\ref\TypeSystem_PieShopHRM.dll
