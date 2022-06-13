@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace TypeSystem_PieShopHRM
+namespace PieShopHRM_UsingStrings
 {
     class Program
     {

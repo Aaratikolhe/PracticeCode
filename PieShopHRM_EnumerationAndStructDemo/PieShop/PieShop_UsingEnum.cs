@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PieShopHRM_EnumerationAndStructDemo
+namespace PieShopHRM_EnumerationAndStructDemo.PieShop
 {
     public class PieShop_UsingEnum
     {
@@ -16,7 +16,7 @@ namespace PieShopHRM_EnumerationAndStructDemo
             int basisSalary = 10000;
             int totalSalary = CalculateTotalSalary(basisSalary, employeeType, storeType);
             return totalSalary;
-            
+
         }
 
         private static int CalculateTotalSalary(int basicSalary, EmployeeType employeeType, StoreType storeType)

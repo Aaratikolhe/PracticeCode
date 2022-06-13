@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PieShopHRM_EnumerationAndStructDemo
+namespace PieShopHRM_EnumerationAndStructDemo.PieShop
 {
     public class PieShop_UsingStruct
     {
         public static void UsingStruct()
         {
             Employee employee;
-            employee.Name="Aarati";
+            employee.Name = "Aarati";
             employee.Salary = 10000;
             employee.Work();
 
         }
-     }
+    }
     struct Employee
     {
         public string Name;

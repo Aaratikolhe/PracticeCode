@@ -1,4 +1,4 @@
-﻿using PieShopHRM_EnumerationAndStructDemo;
+﻿using PieShopHRM_EnumerationAndStructDemo.PieShop;
 
 namespace PieShopHRM_EnumerationAndStructDemo
 {
