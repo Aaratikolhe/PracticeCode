@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TypeSystem_PieShopHRM", "TypeSystem_PieShopHRM.csproj", "{E52AB026-6EC1-4E3A-B363-CC1EF99323BE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TypeSystem_PieShopHRM", "TypeSystem_PieShopHRM.csproj", "{E52AB026-6EC1-4E3A-B363-CC1EF99323BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieShopHRM_UsingStrings", "..\PieShopHRM_UsingStrings\PieShopHRM_UsingStrings.csproj", "{474FD3C4-6FBD-4152-8A13-5116DC860898}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieShopHRM_UsingStrings", "..\PieShopHRM_UsingStrings\PieShopHRM_UsingStrings.csproj", "{474FD3C4-6FBD-4152-8A13-5116DC860898}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieShopHRM_WorkingWithMethods", "..\PieShopHRM_WorkingWithMethods\PieShopHRM_WorkingWithMethods.csproj", "{88DD3C7B-2C23-45DC-B0E4-E79F4ED3A12F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PieShopHRM_WorkingWithMethods", "..\PieShopHRM_WorkingWithMethods\PieShopHRM_WorkingWithMethods.csproj", "{88DD3C7B-2C23-45DC-B0E4-E79F4ED3A12F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PieShopHRM_EnumerationAndStructDemo", "..\PieShopHRM_EnumerationAndStructDemo\PieShopHRM_EnumerationAndStructDemo.csproj", "{2C855DB8-6C55-4A63-8B41-94BC67CF8703}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{88DD3C7B-2C23-45DC-B0E4-E79F4ED3A12F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{88DD3C7B-2C23-45DC-B0E4-E79F4ED3A12F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{88DD3C7B-2C23-45DC-B0E4-E79F4ED3A12F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C855DB8-6C55-4A63-8B41-94BC67CF8703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C855DB8-6C55-4A63-8B41-94BC67CF8703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C855DB8-6C55-4A63-8B41-94BC67CF8703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C855DB8-6C55-4A63-8B41-94BC67CF8703}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
