@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace PieShopHRM_ApplyingInheritance
 {
-    public class Employee
+    public abstract class Employee:IEmployee,IComparable
     {
+        public int EmploeeID { get; set; }  
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public double BasicSalary { get; set; }
@@ -18,7 +19,7 @@ namespace PieShopHRM_ApplyingInheritance
         {
         }
 
-        public Employee(string firstName, string lastName, double? salary,DateTime birthDate)
+        public Employee(int employeeId,string firstName, string lastName, double? salary,DateTime birthDate)
         {
             this.FirstName = firstName;
             LastName = lastName;
@@ -44,16 +45,40 @@ namespace PieShopHRM_ApplyingInheritance
         {
             Console.WriteLine($"Tax Rate for the employees is :{taxRate}");
         }
+        public abstract double ReceiveWage();
         public void PerformWork()
         {
             NumberOfHoursWorked++;
 
-            Console.WriteLine($"{FirstName} {LastName} is now working!");
+            Console.WriteLine($"{FirstName} {LastName} is now working");
         }
 
         public virtual void GiveBonus()
         {
             Console.WriteLine($"{ FirstName} { LastName} received bonus of Rs 3000");
+        }
+
+        public void StopWorking()
+        {
+            Console.WriteLine($"{FirstName} {LastName} has stopped working");
+        }
+
+        public void GiveCompliment()
+        {
+            Console.WriteLine($"{FirstName} has done a good job");
+        }
+
+        public int CompareTo(object? obj)
+        {
+            var otherEmployee=(Employee)obj;
+            if (EmploeeID > otherEmployee.EmploeeID)
+            {
+                return 1;
+            }
+            else if (EmploeeID < otherEmployee.EmploeeID)
+                return -1;
+            else
+                return 0;
         }
     }
 }

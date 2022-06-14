@@ -9,7 +9,7 @@ namespace PieShopHRM_ApplyingInheritance
     public  class Manager:Employee
     {
         
-        public Manager(string first,string last,double basicSalary,DateTime birthDate):base(first,last,basicSalary,birthDate)
+        public Manager(int employeeId,string first,string last,double basicSalary,DateTime birthDate):base(employeeId, first,last,basicSalary,birthDate)
         {
 
         }
@@ -24,6 +24,19 @@ namespace PieShopHRM_ApplyingInheritance
                 Console.WriteLine($"Manager {FirstName} {LastName} received a management bonus of 5000!");
             else
                 Console.WriteLine($"Manager {FirstName} {LastName} received a management bonus of 2500!");
+        }
+
+        public override double ReceiveWage()
+        {
+            double wage;
+            if (NumberOfHoursWorked > 5)
+            {
+                wage =BasicSalary-( BasicSalary * taxRate)+5000;
+            }
+            else
+                wage = BasicSalary - (BasicSalary * taxRate) + 3000;
+
+            return wage;
         }
     }
     

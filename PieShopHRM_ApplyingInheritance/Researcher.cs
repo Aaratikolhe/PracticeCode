@@ -11,7 +11,7 @@ namespace PieShopHRM_ApplyingInheritance
         public int ResearchHours { get; set; }
         public int HourlyRateofWork { get; set; }
         public double Wage { get; set; }
-        public Researcher(string first, string last, double basicSalary, DateTime birthDate,int reserchHours) : base(first, last, basicSalary, birthDate)
+        public Researcher(int employeeId, string first, string last, double basicSalary, DateTime birthDate,int reserchHours) : base(employeeId, first, last, basicSalary, birthDate)
         {
             ResearchHours=reserchHours;
         }
@@ -22,23 +22,24 @@ namespace PieShopHRM_ApplyingInheritance
             Console.WriteLine($"Researcher {FirstName} {LastName} is has invented a new pie taste in {ResearchHours} hours!");
         }
 
-        //public override double CalculateReceivedWage()
-        //{
-        //    double wageBeforeTax = NumberOfHoursWorked* HourlyRateofWork;
-        //    double taxAmount = wageBeforeTax * taxRate;
+        public override double ReceiveWage()
+        {
+            double wage;
+            if (NumberOfHoursWorked > 5)
+            {
+                wage = BasicSalary - (BasicSalary * taxRate) + 5000;
+            }
+            else
+                wage = BasicSalary - (BasicSalary * taxRate) + 3000;
 
-        //    Wage = wageBeforeTax - taxAmount;
+            return wage;
+        }
 
-        //    Console.WriteLine($"The wage for {NumberOfHoursWorked} hours of work is {Wage}.");
-        //    NumberOfHoursWorked = 0;
-
-        //    return Wage;
-        //}
     }
 
     public class JuniorResearcher : Researcher
     {
-        public JuniorResearcher(string first, string last, double basicSalary, DateTime birthDate, int reserchHours, int hoursWorked) : base(first, last, basicSalary, birthDate,reserchHours)
+        public JuniorResearcher(int employeeId,string first, string last, double basicSalary, DateTime birthDate, int reserchHours, int hoursWorked) : base(employeeId,first, last, basicSalary, birthDate,reserchHours)
         {
         }
 
