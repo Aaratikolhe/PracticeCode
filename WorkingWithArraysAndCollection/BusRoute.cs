@@ -24,7 +24,7 @@ namespace WorkingWithArraysAndCollection
 
 		public override string ToString()
         {
-			return $"Route Number {RouteNumber}: {Origin} -> {Destination}";
+			return $": {Origin} -> {Destination}";
 		}
 		public bool Serves(string destination)
 		{

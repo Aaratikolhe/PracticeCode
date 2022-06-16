@@ -4,25 +4,29 @@
 	{
 		public static void Main(string[] args)
 		{
-			BusRoutesRepository repository = new BusRoutesRepository();
+			var allRoutes = BusRoutesRepository.InitializeRoutes();
 
-			Console.WriteLine("Where are you?");
-			string startingLocation = Console.ReadLine();
+			Console.WriteLine("Which number of bus you want to take?");
+			int busNumber = Convert.ToInt32(Console.ReadLine());
 
-			Console.WriteLine("Where do you want to go to?");
-			string goingTo = Console.ReadLine();
+			//BusRoute busRoute= allRoutes[busNumber];
+			//if (busRoute != null)
+				//Console.WriteLine($"The route of the bus number {busNumber} is  {busRoute}");
+			//else
+				//Console.WriteLine($"There is no route with number {busNumber}");
 
-			BusRoute[] originRoutes = repository.FindAllBusToRoute(startingLocation);
-			BusRoute[] destinationRoutes = repository.FindAllBusToRoute(goingTo);
-
-			HashSet<BusRoute> routes = new HashSet<BusRoute>(originRoutes);
-			routes.IntersectWith(destinationRoutes);
-
-			if (routes.Count > 0)
-				foreach (BusRoute route in routes)
-					Console.WriteLine($"You can use route {route}");
+			bool success = allRoutes.TryGetValue(busNumber, out BusRoute busRoute1);
+			if (success)
+				Console.WriteLine($"The route of the bus number {busNumber} is  {busRoute1}");
 			else
-				Console.WriteLine($"No routes go between {startingLocation} and {goingTo}");
+				Console.WriteLine($"There is no route with number {busNumber}");
+
+			bool success2 = allRoutes.ContainsKey(busNumber);
+			if (success2)
+				Console.WriteLine($"The route of the bus number {busNumber} is  {allRoutes[busNumber]}");
+			else
+				Console.WriteLine($"There is no route with number {busNumber}");
+
 		}		
 		
 	}	

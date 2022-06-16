@@ -8,26 +8,20 @@ namespace WorkingWithArraysAndCollection
 {
     public class BusRoutesRepository
     {
-		private readonly BusRoute[] allRoutes;
-		public  BusRoutesRepository()
+		public static Dictionary<int, BusRoute> InitializeRoutes()
 		{
-			allRoutes= new BusRoute[] {
-            new BusRoute(11, new string[]{"Nigdi","Bhosari","Chakan","Pune Station"}),
-            new BusRoute(12, new string[]{"Pashan","Baner","Chakan","Pune"}),
-            new BusRoute(13, new string[]{"Ravet","Wakad","Aundh","Pune"}),
 
+			BusRoute route1 = new BusRoute(1, new string[] { "Nigdi", "Bhosari", "Chakan", "Pune Station" });
+			BusRoute route2 = new BusRoute(2, new string[] {"Pashan","Baner","Chakan","Pune"});
+			BusRoute route3 = new BusRoute(3, new string[] { "Ravet", "Wakad", "Aundh", "Pune" });
+
+			var routes = new Dictionary<int, BusRoute>
+			{
+				{ 1, route1 },
+				{ 2, route2 },
+				{ 3, route3 },
 			};
-		}
-		public BusRoute[] FindAllBusToRoute(string location)
-		{
-			return Array.FindAll(allRoutes, route => route.Serves(location));
-
-			//return Array.FindAll(allRoutes, route => route.Origin == location || route.Destination == location);
-		}
-		public BusRoute[] FindBusesBetween(string location1, string location2)
-		{
-			return Array.FindAll(allRoutes,
-				route => route.Serves(location1) && route.Serves(location2));
+			return routes;
 		}
 
 
