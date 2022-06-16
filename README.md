@@ -1,1 +1,1 @@
-#Parctice codes during traing
+#Practice codes during traning
