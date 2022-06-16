@@ -4,43 +4,26 @@
 	{
 		public static void Main(string[] args)
 		{
-			BusRoute[] allRoutes = BusRoutesRepository.InitializeRoutes();
+			BusRoutesRepository repository = new BusRoutesRepository();
+
+			Console.WriteLine("Where are you?");
+			string startingLocation = Console.ReadLine();
 
 			Console.WriteLine("Where do you want to go to?");
-			string location = Console.ReadLine();
+			string goingTo = Console.ReadLine();
 
-			//BusRoute? route = FindBusTo(allRoutes, location);
-			BusRoute[] routes = FindAllBusToRoute(allRoutes, location);
+			BusRoute[] originRoutes = repository.FindAllBusToRoute(startingLocation);
+			BusRoute[] destinationRoutes = repository.FindAllBusToRoute(goingTo);
 
-			//if (route != null)
-			//	Console.WriteLine($"You can use route {route}");
-			//else
-			//	Console.WriteLine($"No routes go to {location}");
-			if (routes.Length >0 )
+			HashSet<BusRoute> routes = new HashSet<BusRoute>(originRoutes);
+			routes.IntersectWith(destinationRoutes);
+
+			if (routes.Count > 0)
 				foreach (BusRoute route in routes)
-				Console.WriteLine($"You can use route {route}");
+					Console.WriteLine($"You can use route {route}");
 			else
-				Console.WriteLine($"No routes go to {location}");
-		
-		}
-
-		//public static BusRoute? FindBusTo(BusRoute[] routes, string location)
-		//{
-		//	//foreach (BusRoute route in routes)
-		//	//{
-		//	//	if (route.Origin == location || route.Destination == location)
-		//	//		return route;
-		//	//}
-
-		//	return Array.Find(routes, route => route.Origin == location || route.Destination == location);
-		//}
-
-		public static BusRoute[] FindAllBusToRoute(BusRoute[] routes, string location)
-		{
-			return Array.FindAll(routes,route=> route.Serves(location));
-			
-			//return Array.FindAll(routes, route => route.Origin == location || route.Destination == location);
-		}
+				Console.WriteLine($"No routes go between {startingLocation} and {goingTo}");
+		}		
 		
 	}	
 }

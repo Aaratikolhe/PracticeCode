@@ -11,41 +11,11 @@ namespace WorkingWithArraysAndCollection
 
 		public int RouteNumber { get; }
 		public string? Origin=> PlacesServed[0];
-		//public string origin;
-		//public string Origin
-		//{
-		//	get
-		//	{
-		//		return origin;
-		//	}
-		//	set
-		//	{
-
-		//		origin = value
-		//	}
-		//}
-		//public string destination;
+	
 		public string Destination => PlacesServed[PlacesServed.Length-1];
 
-		//public string Destination
-		//{
-		//	get
-		//	{
-		//		return origin;
-		//	}
-		//	set
-		//	{
-
-		//		origin =value;
-		//	}
-		//}
 		public string[] PlacesServed { get; }
-		//public BusRoute(int number, string origin,string destination )
-		//{
-		//	this.RouteNumber = number;
-		//	this.origin = origin;
-		//	this.destination = destination;
-		//}
+		
 		public BusRoute(int number, string[] placesServed)
 		{
 			this.RouteNumber = number;

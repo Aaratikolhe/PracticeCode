@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kolh_aar\\TrainingMaterial\\WorkingWithArraysAndCollection\\WorkingWithArraysAndCollection.csproj",
+      "projectUniqueName": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\WorkingWithArraysAndCollection\\WorkingWithArraysAndCollection.csproj",
       "projectName": "WorkingWithArraysAndCollection",
-      "projectPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\WorkingWithArraysAndCollection\\WorkingWithArraysAndCollection.csproj",
+      "projectPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\WorkingWithArraysAndCollection\\WorkingWithArraysAndCollection.csproj",
       "packagesPath": "C:\\Users\\kolh_aar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\WorkingWithArraysAndCollection\\obj\\",
+      "outputPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\WorkingWithArraysAndCollection\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
