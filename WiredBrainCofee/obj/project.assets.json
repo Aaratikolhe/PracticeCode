@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kolh_aar\\PracticeCode\\WiredBrainCofee\\WiredBrainCofee.csproj",
+      "projectUniqueName": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\WiredBrainCofee\\WiredBrainCofee.csproj",
       "projectName": "WiredBrainCofee",
-      "projectPath": "C:\\Users\\kolh_aar\\PracticeCode\\WiredBrainCofee\\WiredBrainCofee.csproj",
+      "projectPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\WiredBrainCofee\\WiredBrainCofee.csproj",
       "packagesPath": "C:\\Users\\kolh_aar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kolh_aar\\PracticeCode\\WiredBrainCofee\\obj\\",
+      "outputPath": "C:\\Users\\kolh_aar\\TrainingMaterial\\PracticeCode\\WiredBrainCofee\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
